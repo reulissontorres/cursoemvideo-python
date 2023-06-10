@@ -1,3 +1,3 @@
-preço = float(input('Qual é o preço do produto? R$'))
-novo = preço - (preço * 5 / 100)
-print('O produto que custava R${:.2f}, na promoção com desconto de 5% vai custar R${:.2f}'.format(preço, novo))
+price = float(input('What is the price of the product? R$'))
+new_price = price - (price * 5 / 100)
+print('The product that costed R${:.2f}, on promotion with a 5% discount, will now cost R${:.2f}'.format(price, new_price))

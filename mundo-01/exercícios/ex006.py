@@ -1,3 +1,6 @@
-n = int(input('Digite um número: '))
-print('O dobro de {} vale {}.'.format(n, (n*2)))
-print('O triplo de {} vale {}. \nA raiz quadrada de {} é igual a {:.2f}.'.format(n, (n*3), n, pow(n, (1/2))))
+number = int(input('Enter a number: '))
+double = number * 2
+triple = number * 3
+square_root = pow(number, 1/2)
+print('The double of {} is {}.'.format(number, double))
+print('The triple of {} is {}.\nThe square root of {} is {:.2f}.'.format(number, triple, number, square_root))

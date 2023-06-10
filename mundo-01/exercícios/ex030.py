@@ -1,6 +1,6 @@
-número = int(input('\033[35mMe diga um número qualquer: '))
-resultado = número % 2
-if resultado == 0:
-    print('\033[37mO número {} é \033[34mPAR'.format(número))
+number = int(input('\033[35mTell me any number: '))
+remainder = number % 2
+if remainder == 0:
+    print('\033[37mThe number {} is \033[34mEVEN'.format(number))
 else:
-    print('\033[37mO número {} é \033[34mÍMPAR'.format(número))
+    print('\033[37mThe number {} is \033[34mODD'.format(number))

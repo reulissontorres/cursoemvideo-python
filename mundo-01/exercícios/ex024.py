@@ -1,2 +1,5 @@
-cid = str(input('Em que cidade você nasceu? ')).strip()
-print(cid[:5].upper() == 'SANTO')
+city = input('Which city were you born in? ').strip()
+
+starts_with_santo = city[:5].upper() == 'SANTO'
+
+print(starts_with_santo)

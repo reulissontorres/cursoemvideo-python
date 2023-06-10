@@ -1,4 +1,4 @@
-distância = float(input('Qual é a distância da sua viagem? '))
-print('Você está prestes a começar uma viagem de {}Km.'.format(distância))
-preço = distância * 0.50 if distância <= 200 else distância * 0.45
-print('E o preço da sua passagem será de R${:.2f}'.format(preço))
+distance = float(input('What is the distance of your trip? '))
+print('You are about to start a trip of {}Km.'.format(distance))
+price = distance * 0.50 if distance <= 200 else distance * 0.45
+print('And the price of your ticket will be R${:.2f}'.format(price))

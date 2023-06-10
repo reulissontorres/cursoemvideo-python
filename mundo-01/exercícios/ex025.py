@@ -1,2 +1,5 @@
-nome = str(input('Qual é seu nome completo? ')).strip()
-print('Seu nome tem Silva? {}'.format('silva' in nome.lower()))
+name = input('What is your full name? ').strip()
+
+has_silva = 'silva' in name.lower()
+
+print('Does your name have Silva? {}'.format(has_silva))

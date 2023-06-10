@@ -1,13 +1,16 @@
 from random import randint
 from time import sleep
-computador = randint(0, 0) # Faz o computador "PENSAR"
+
+computer_number = randint(0, 5)
 print('\033[33m-=-' * 20)
-print('\033[34mVou pensar em um número entre 0 e 5. Tente adivinhar...')
+print('\033[34mI will think of a number between 0 and 5. Try to guess...')
 print('\033[33m-=-' * 20)
-jogador = int(input('\033[mEm que número eu pensei? ')) # Jogador tenta adivinhar
-print('\033[35mPROCESSANDO...')
+
+player_number = int(input('\033[mWhat number am I thinking of? '))
+print('\033[35mPROCESSING...')
 sleep(3)
-if jogador == computador:
-    print('\033[32mPARABÉNS! Você conseguiu me vencer!')
+
+if player_number == computer_number:
+    print('\033[32mCongratulations! You managed to beat me!')
 else:
-    print('\033[31mGANHEI! Eu pensei no número {} e não no {}!'.format(computador, jogador))
+    print('\033[31mI won! I was thinking of the number {} and not {}'.format(computer_number, player_number))

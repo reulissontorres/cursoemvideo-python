@@ -1,17 +1,20 @@
-a = int(input('Primeiro valor: '))
-b = int(input('Segundo valor: '))
-c = int(input('Terceiro valor: '))
-# Verificando quem é menor
-menor = a
+a = int(input('First value: '))
+b = int(input('Second value: '))
+c = int(input('Third value: '))
+
+# Checking which is the smallest
+smallest = a
 if b < a and b < c:
-    menor = b
+    smallest = b
 if c < a and c < b:
-    menor = c
-# Verificando quem é o maior
-maior = a
+    smallest = c
+
+# Checking which is the largest
+largest = a
 if b > a and b > c:
-    maior = b
+    largest = b
 if c > a and c > b:
-    maior = c
-print('O menor valor digitado foi {}'.format(menor))
-print('O maior valor digitado foi {}'.format(maior))
+    largest = c
+
+print('The smallest value entered was {}'.format(smallest))
+print('The largest value entered was {}'.format(largest))

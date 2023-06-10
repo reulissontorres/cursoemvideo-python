@@ -1,6 +1,6 @@
-velocidade = float(input('Qual é a velocidade atual do carro? '))
-if velocidade > 80:
-    print('\033[31mMULTADO! Você excedeu o limite permitido que é de 80Km/h')
-    multa = (velocidade-80) * 7
-    print('Você deve pagar uma multa de \033[33mR${:.2f}!'.format(multa))
-print('\033[32mTenha um bom dia! Dirija com segurança!')
+speed = float(input('What is the current speed of the car? '))
+if speed > 80:
+    print('\033[31mFINE! You exceeded the speed limit of 80Km/h')
+    fine = (speed - 80) * 7
+    print('You must pay a fine of \033[33mR${:.2f}!'.format(fine))
+print('\033[32mHave a nice day! Drive safely!')

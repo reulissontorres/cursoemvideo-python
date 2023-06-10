@@ -1,5 +1,6 @@
-n = str(input('Digite seu nome completo: ')).strip()
-nome = n.split()
-print('Muito prazer em te conhecer!')
-print('Seu primeiro nome é {}'.format(nome[0]))
-print('Seu último nome é {}'.format(nome[len(nome)-1]))
+full_name = input('Enter your full name: ').strip()
+name_parts = full_name.split()
+
+print('Nice to meet you!')
+print('Your first name is {}'.format(name_parts[0]))
+print('Your last name is {}'.format(name_parts[-1]))

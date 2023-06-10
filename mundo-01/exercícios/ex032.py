@@ -1,8 +1,11 @@
 from datetime import date
-ano = int(input('Que ano quer analisar? Coloque 0 para analisar o ano atual: '))
-if ano == 0:
-    ano = date.today().year
-if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
-    print('O ano {} é BISSEXTO'.format(ano))
+
+year = int(input('Which year do you want to analyze? Enter 0 to analyze the current year: '))
+
+if year == 0:
+    year = date.today().year
+
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print('The year {} is a LEAP year'.format(year))
 else:
-    print('O ano {} NÃO é BISSEXTO'.format(ano))
+    print('The year {} is NOT a LEAP year'.format(year))
